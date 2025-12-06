@@ -30,20 +30,17 @@
 }
 
 .hero--primary {
-  background: linear-gradient(45deg, var(--ifm-color-primary-darkest), var(--ifm-color-primary-lightest));
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  background-color: #0f0;
+  animation: neon-glow 1.5s ease-in-out infinite alternate;
+  color: white; /* Ensure text is readable */
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
+@keyframes neon-glow {
+  from {
+    box-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
   }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
+  to {
+    box-shadow: 0 0 20px #0f0, 0 0 30px #0f0, 0 0 40px #0f0;
   }
 }
 
