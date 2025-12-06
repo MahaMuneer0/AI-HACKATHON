@@ -1,0 +1,87 @@
+Overview:
+Define the full set of functional, non-functional, and acceptance requirements
+for producing the AI-generated textbook website using Docusaurus, Claude Code,
+and Spec-Kit Plus. All requirements must comply with the constitution.
+
+Functional Requirements:
+
+1. Textbook Structure
+   - The system must generate a complete textbook titled:
+     "Physical AI & Humanoid Robotics — A Modern Introductory Course".
+   - The textbook must contain multiple modules/chapters organized hierarchically.
+   - Each chapter must include:
+     - Theory explanations
+     - Practical examples
+     - Diagrams (ASCII or tool-generated)
+     - Exercises or labs
+   - Chapters must follow a unified template for consistency.
+
+2. Docusaurus Integration
+   - A new Docusaurus project must be initialized.
+   - The textbook content must be stored in the /docs directory.
+   - A sidebar navigation structure must be auto-generated via sidebars.js.
+   - The site must build successfully via:
+     npm install
+     npm run start
+     npm run build
+
+3. GitHub Pages Deployment
+   - The textbook must be deployed to GitHub Pages.
+   - Deployment must be handled by:
+     - Docusaurus’s built-in deploy script, or
+     - GitHub Actions workflow.
+   - The final site must be accessible via public URL.
+
+4. AI-Assisted Generation
+   - Claude Code must be used to produce all chapters, examples, and diagrams.
+   - Spec-Kit Plus must control the workflow (constitution → specify → plan → tasks → implement).
+   - All content must be iteratively refined, not generated in a single pass.
+
+5. Documentation Assets
+   - Include a README explaining:
+     - The purpose of the book
+     - Build instructions
+     - Deployment instructions
+     - Toolchain overview (Spec-Kit, Claude Code, Docusaurus)
+
+Non-Functional Requirements:
+
+1. Writing Quality
+   - Must be clear, beginner-friendly, and logically structured.
+   - Must avoid unnecessary jargon unless explained.
+   - Must support readers with no prior robotics experience.
+
+2. Consistency
+   - All chapters must use unified formatting:
+     - Heading structure
+     - Code block formatting
+     - Diagrams style
+     - Terminology
+
+3. Maintainability
+   - The project must remain modular and easily extendable.
+   - All content must be version-controlled with Git.
+   - No non-essential dependencies are allowed.
+
+4. Reliability
+   - The Docusaurus site must build without errors.
+   - Links, references, and navigation must remain functional.
+
+5. Aesthetic & Usability Requirements
+   - The site must be clean, readable, responsive, and accessible.
+   - Navigation must be simple and intuitive.
+   - Code examples must be easy to copy and run.
+
+Acceptance Criteria:
+
+1. A complete Docusaurus site builds successfully.
+2. All textbook chapters exist with polished content.
+3. GitHub Pages deployment is live and accessible.
+4. Repo contains:
+   - docs/ (all textbook content)
+   - docusaurus.config.js
+   - sidebars.js
+   - /static (if used)
+   - Deployment workflow
+   - README.md
+5. All work aligns with the constitution and Spec-Kit methodology.
