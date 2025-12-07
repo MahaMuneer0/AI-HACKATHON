@@ -18,7 +18,7 @@ const config: Config = {
   url: 'https://MahaMuneer0.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/AI-HACKATHON/',
+  baseUrl: 'AI-HACKATHON/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
